@@ -1,0 +1,70 @@
+/*------------------------------------------------------------------
+[TABLE OF CONTENTS]
+
+        1. Global Styles
+                1.1. Extras 
+        2. Header Styles
+        3. Together Styles 
+        4. Services Styles 
+        5. Video wrap Styles 
+        6. Work Styles 
+        7. Newsletter   
+        8. Testimonial 
+        9. Team 
+        10. Stats 
+        11. Clients Styles 
+        12. Contact Styles 
+        13. Footer Styles 
+        14. Sub Extras 
+        15. Screenshots 
+        16. Newsletter / 2 
+        17. Pricing 
+        18. Testimonial / 2 
+        19. Downloads 
+        20. Footer / 2 
+        21. Slider Styles 
+        22. Features Styles 
+        23. Info wrap 
+        24. Blog Styles 
+-------------------------------------------------------------------*/
+
+/* 1. Global Styles */
+
+.titulo-tip {
+  color: #00A5DA;
+  text-transform: uppercase;
+  font-size: xx-large;
+}
+
+.label-tip {
+  color: #9900CC;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 0;
+}
+
+.label-tip span {
+  color: black;
+  text-transform: capitalize;
+  font-weight: normal;
+}
+
+.border-section {
+  border-left: 2px solid #00A5DA;
+}
+
+.bg-title {
+  background-color: #058DC1;
+}
+
+.subtitle-productos {
+  color: white;
+  text-transform: uppercase;
+}
+
+.desc-title {
+  color: #581862;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 18px;
+}
