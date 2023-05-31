@@ -30,10 +30,34 @@
 
 /* 1. Global Styles */
 
+@font-face {
+  font-family: "BlockPro-Condensed";
+  src: url('../fonts/BlockPro-Condensed.otf');
+}
+
+@font-face {
+  font-family: "HelveticaNeueLTStd-BdCn";
+  src: url('../fonts/HelveticaNeueLTStd-BdCn.otf');
+}
+
+@font-face {
+  font-family: "HelveticaLTCondensedRegular";
+  src: url('../fonts/HelveticaLTCondensedRegular.ttf');
+}
+
+p, .span-copy {
+  font-family: 'HelveticaLTCondensedRegular';
+}
+
+h4, .p-copy {
+  font-family: 'HelveticaNeueLTStd-BdCn';
+}
+
 .titulo-tip {
   color: #00A5DA;
   text-transform: uppercase;
-  font-size: xx-large;
+  font-size: 2.5rem;
+  font-family: "HelveticaNeueLTStd-BdCn";
 }
 
 .label-tip {
@@ -41,12 +65,14 @@
   text-transform: uppercase;
   font-weight: bold;
   margin: 0;
+  font-family: "HelveticaNeueLTStd-BdCn";
 }
 
 .label-tip span {
   color: black;
   text-transform: capitalize;
   font-weight: normal;
+  font-family: 'HelveticaLTCondensedRegular';
 }
 
 .border-section {
@@ -57,14 +83,88 @@
   background-color: #058DC1;
 }
 
-.subtitle-productos {
-  color: white;
+.subtitle {
   text-transform: uppercase;
+  font-family: 'BlockPro-Condensed';
+  font-size: 2.5rem;
 }
 
 .desc-title {
   color: #581862;
   text-transform: uppercase;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 20px;
+}
+
+.desc-option {
+  text-transform: uppercase;
+  color: #581862;
+}
+
+.c-link {
+  text-decoration: none;
+  color: white;
+}
+
+.card-dark {
+  background-color: #ededf1;
+}
+
+.main-title {
+  color: #581862; 
+  text-transform: uppercase; 
+  font-size: 72px;
+  line-height: 0.9;
+  font-family: 'BlockPro-Condensed';
+}
+
+.desc-productos {
+  font-family: 'BlockPro-Condensed';
+  text-transform: uppercase;
+  color: #581862;
+  font-size: 1.25rem;
+  line-height: 0.9;
+}
+
+.link-productos {
+  text-transform: uppercase;
+  color: #00A5DA;
+  font-family: 'HelveticaNeueLTStd-BdCn';
+  text-decoration: underline;
+  font-size: 1.25rem;
+}
+
+.whatsapp-fixed {
+  position: fixed;
+  right: 20px;
+  bottom: 32px;
+  width: 60px;
+  height: 60px;
+  line-height: 40px;
+  background: #00e676;
+  color: #fff;
+  text-align: center;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  font-size: 7px !important;
+  border-radius: 32px;
+  z-index: 401;
+}
+
+.whatsapp-fixed:hover, .whatsapp-fixed:active, .whatsapp-fixed:focus {
+  color: white;
+}
+
+.whatsapp-fixed i {
+  margin: 14px 0 0 1px;
+  font-size: 30px !important;
+}
+
+.go-top {
+  position: fixed;
+  left: 20px;
+  color: #333;
+  bottom: 32px;
+  z-index: 99;
+  transition:.4s;
 }

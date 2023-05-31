@@ -1,17 +1,47 @@
 <!doctype html>
 <html lang="es">
   <head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+          new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-MSK83D6');</script>
+    <!-- End Google Tag Manager -->
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-106893113-10"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-106893113-10');
+    </script>
+
+    <!-- Meta -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+    <meta name="description" content="Helados Calzia" />
+    <meta name="keywords" content="Helados Calzia, helados, helado, calzia, Calzia, cremas heladas, helados artesanales, heladería, heladeria, junin, junín, Junín, Junin">
+    <meta name="author" content="www.edit.com.ar">
+
+    <title>Helados Calzia</title>
+
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/favicon.ico">
+    
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <div id="loader"></div>
     <!-- NAVIGATION -->
     <header class="header1" id="header2">
-      <nav class="navbar fixed-top navbar-expand-lg bg-white">
+      <nav class="navbar navbar-expand-lg bg-white">
         <div class="container">
           <a class="navbar-brand" href="#">
             <img src="images/logo.png" width="64" />
@@ -28,28 +58,28 @@
                 <a class="nav-link" href="productos.html">Productos</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Empresa</a>
+                <a class="nav-link" href="#empresa">Empresa</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Venta mayorista</a>
+                <a class="nav-link" href="#contacto">Venta mayorista</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Contacto</a>
+                <a class="nav-link" href="#contacto">Contacto</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#"><i class="fa fa-phone" aria-hidden="true"></i></a>
+                <a class="nav-link" href="tel:+5492364698746" title="(0236) 4698746"><i class="fa-solid fa-phone-flip"></i></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+                <a class="nav-link" href="https://api.whatsapp.com/send?phone=+5492364698746&amp;text=Hola, lo contacté a través de su sitio web." target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                <a class="nav-link" href="https://www.facebook.com/heladoscalzia/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                <a class="nav-link" href="https://www.instagram.com/heladoscalzia/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#"><i class="fa fa-map-pin" aria-hidden="true"></i></a>
+                <a class="nav-link" href="https://www.google.com.ar/maps/place/Helados+Calzia+SRL/@-34.58918,-60.9549103,15z/data=!4m5!3m4!1s0x0:0xc4ba6b4acf246993!8m2!3d-34.58918!4d-60.9549103" target="_blank"><i class="fa-solid fa-location-dot"></i></a>
               </li>
             </ul>
           </div>
@@ -104,105 +134,118 @@
       </button>
     </div>
 
-    <div class="container my-5">
+    <div class="container my-5" id="productos">
       <div class="row">
-        <div class="col-lg-6 d-flex align-content-center">
-          <h2 style="color: #581862; text-transform: uppercase; font-weight: 800; font-size: 48px;">Nuestros productos</h2>
+        <div class="col-lg-4 offset-lg-1 d-flex align-content-center">
+          <div class="d-flex align-items-center">
+            <h1 class="main-title">Nuestros productos</h1>
+          </div>
         </div>
         <div class="col-lg-2 text-center">
           <div style="background-color: #00A5DA; border-radius: 100%; width: 118px; height: 118px; margin: auto;">
             <img src="images/productos/lineas/impulsivos.png" width="98" height="98" style="margin-top: 10px;" />
           </div>
-          <p>Palitos, Cucuruchos y Tacitas</p>
+          <p class="desc-productos my-3 px-5">Palitos, Cucuruchos y Tacitas</p>
         </div>
         <div class="col-lg-2 text-center">
           <div style="background-color: #00A5DA; border-radius: 100%; width: 118px; height: 118px; margin: auto;">
             <img src="images/productos/lineas/postres.png" width="98" height="98" style="margin-top: 10px;" />
           </div>
-          <p>Postres, Bombones y Copas</p>
+          <p class="desc-productos my-3 px-5">Postres, Bombones y Copas</p>
         </div>
         <div class="col-lg-2 text-center">
           <div style="background-color: #00A5DA; border-radius: 100%; width: 118px; height: 118px; margin: auto;">
             <img src="images/productos/lineas/familiar.png" width="98" height="98" style="margin-top: 10px;" />
           </div>
-          <p>Potes, Familiares y Tortas</p>
+          <p class="desc-productos my-3 px-5">Potes, Familiares y Tortas</p>
         </div>
       </div>
       <div class="row text-center">
-        <p>Ver todos los productos</p>
+        <p class="mb-0 mt-4 link-productos"><a href="productos.html" style="color: #00A5DA;">Ver todos los productos ></a></p>
       </div>
     </div>
 
-    <div class="py-5" style="background-color: #058DC1;">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6">
-            <h3>Un helado con historia</h3>
-            <p>Nos enorgullece ofrecer healdos artesanales con recetas unicas y sabores autenticos que 
-              evocan recuerdos y emociones.</p>
-            <p>
-              Somos la tercera generacion familiar que diariamente elabora helado artesanal, un producto 
-              sano, nutritivo y delicioso. Para compartir momentos o darte un gusto.
-            </p>
-            <p>Veni a visitarnos!</p>
-          </div>
-          <div class="col-lg-6">
-  
+    <div class="container-fluid" id="empresa">
+      <div class="row">
+        <div class="col-lg-6 py-5" style="background-color: #00A5DA;">
+          <div class="container">
+            <div class="col-lg-6 offset-lg-4 text-white">
+              <h2 class="subtitle">Un helado con historia</h2>
+              <p>Nos enorgullece ofrecer healdos artesanales con recetas unicas y sabores autenticos que 
+                evocan recuerdos y emociones.</p>
+              <p>
+                Somos la tercera generacion familiar que diariamente elabora helado artesanal, un producto 
+                sano, nutritivo y delicioso. Para compartir momentos o darte un gusto.
+              </p>
+              <p class="fw-bold" style="text-transform: uppercase;">¡Veni a visitarnos!</p>
+            </div>
           </div>
         </div>
+        <div class="col-lg-6 py-5" style="background-image: url('https://placehold.co/950x344');"></div>
       </div>
     </div>
 
-    <div class="py-5" style="background-color: #FF99CC;">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6">
-  
-          </div>
-          <div class="col-lg-6">
-            <h3>Lo bueno se comparte</h3>
-            <p>Sorprende a tu familia y amigos con estos postres increibles y faciles de</p>
-            <p>Veni a visitarnos!</p>
-          </div>
+    <div class="container-fluid">
+      <div class="row" style="min-height: 344px;">
+        <div class="col-lg-6 py-5" style="background-image: url('https://placehold.co/950x344');"></div>
+        <div class="col-lg-6 py-5" style="background-color: #FF99CC;">
+          <div class="container">
+            <div class="col-lg-6 offset-lg-1">
+              <h2 class="subtitle mt-4" style="color: #581862;">Lo bueno se comparte</h2>
+              <p class="text-white">Sorprende a tu familia y amigos con estos postres increibles y faciles de
+                hacer en casa. ¡Ideas clásicas e innovadoras para que te inspires y le des tu
+                toque personal!
+              </p>
+              <p class="link-productos text-center"><a href="tips.html" style="color: #581862;">Ver más tips > </a></p>
+            </div>
+          </div>    
         </div>
       </div>
     </div>
-    
-    <div class="py-5" style="background-color: #058DC1;">
+ 
+    <div class="py-4" style="background-color: #058DC1;">
       <div class="container">
-        <div class="row">
+        <div class="row my-1">
           <div class="col-lg-2 offset-lg-2 text-center">
-            <i class="icon social_tumblr fas fa-map-marker-alt fa-lg"></i>
+            <a href="https://www.google.com.ar/maps/place/Helados+Calzia+SRL/@-34.58918,-60.9549103,15z/data=!4m5!3m4!1s0x0:0xc4ba6b4acf246993!8m2!3d-34.58918!4d-60.9549103" target="_blank">
+              <i class="fa-solid fa-location-dot fa-2xl text-white"></i>
+            </a>
           </div>
           <div class="col-lg-2 text-center">
-            <i class="icon social_facebook fab fa-facebook fa-lg"></i>
+            <a href="https://www.facebook.com/heladoscalzia/" target="_blank">
+              <i class="fa-brands fa-facebook-f fa-2xl text-white"></i>
+            </a>  
           </div>
           <div class="col-lg-2 text-center">
-            <i class="icon social_dribbble fab fa-instagram fa-lg"></i>
+            <a href="https://www.instagram.com/heladoscalzia/" target="_blank">
+              <i class="fa-brands fa-instagram fa-2xl text-white"></i>
+            </a>   
           </div>
           <div class="col-lg-2 text-center">
-            <i class="icon fa-envelope"></i>
+            <a href="mailto:info@heladoscalzia.com.ar" target="_blank">
+              <i class="fa-solid fa-envelope fa-2xl text-white"></i>
+            </a>
           </div>
         </div>
       </div>
     </div>
 
-    <footer class="pt-5" style="background-color: #00A5DA;">
+    <footer class="py-5" style="background-color: #00A5DA;" id="contacto">
       <div class="container">
         <div class="row">
-          <div class="col-lg-4 text-white">
+          <div class="col-lg-3 offset-lg-1 text-white">
             <h4>TELÉFONOS / EMAIL</h4>
-            <p>Fijo: (236) 4426065</p>
-            <p>Minorista/Delivery: (236) 4698746</p>
-            <p>Mayorista: (236) 4538779</p>
-            <p>info@heladoscalzia.com.ar</p>
+            <p class="m-0"><a style="color:#FFFFFF; text-decoration: none;" href="tel:+5492364426065">Fijo: (236) 4426065</a></p>
+            <p class="m-0"><a style="color:#FFFFFF; text-decoration: none;" href="tel:+5492364698746">Minorista/Delivery: (236) 4698746</a></p>
+            <p class="m-0"><a style="color:#FFFFFF; text-decoration: none;" href="tel:+5492364538779">Mayorista: (236) 4538779</a></p>
+            <p class="m-0"><a style="color:#FFFFFF; text-decoration: none;" href="mailto:info@heladoscalzia.com.ar">info@heladoscalzia.com.ar</a></p>
           </div>
-          <div class="col-lg-4 text-white">
+          <div class="col-lg-3 text-white">
             <h4>FÁBRICA Y VENTAS</h4>
-            <p>Ameghino 407</p>
-            <p>Junín - Buenos Aires</p>
+            <p class="m-0"><a style="color:#FFFFFF; text-decoration: none;" href="https://www.google.com.ar/maps/place/Helados+Calzia+SRL/@-34.58918,-60.9549103,15z/data=!4m5!3m4!1s0x0:0xc4ba6b4acf246993!8m2!3d-34.58918!4d-60.9549103" target="_blank">Ameghino 407</a></p>
+            <p class="m-0">Junín - Buenos Aires</p>
           </div>
-          <div class="col-lg-2 offset-lg-2">
+          <div class="col-lg-2 offset-lg-2 d-flex justify-content-end">
             <img src="images/logo_blanco.png" width="128" height="128" />
           </div>
         </div>
@@ -211,13 +254,22 @@
 
     <div style="background-color: #058DC1;">
       <div class="container">
-        <div class="row text-center text-white">
-          <p>
-            Copyright           
+        <div class="row py-2 text-center text-white">
+          <p class="p-copy m-0">
+            @Copyright 2023 Helados Calzia SRL - <span class="span-copy">Desarrollado por <a class="c-link" href="https://www.edit.com.ar" target="_blank">Edit</a></span>        
           </p>
         </div>
       </div>
     </div>
+
+    <a class="whatsapp-fixed" href="https://wa.me/542364698746" target="_blank">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <a href="#header2" class="go-top page-scroll">
+      <i class="fa fa-arrow-up fa-2xl"></i>
+    </a>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
   </body>
 </html>
